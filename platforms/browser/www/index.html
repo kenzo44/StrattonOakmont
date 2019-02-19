@@ -1,11 +1,99 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-        <title>Stratton Oakmont</title>
-    </head>
-    <body>
-        <script type="text/javascript" src="cordova.js"></script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Stratton Oakmont</title>
+    <!--Framework 7 Stylesheet-->
+    <link rel="stylesheet" href="assets/css/framework7.min.css">
+    <link rel="stylesheet" href="assets/css/display.css">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="app">
+
+        <!-- Left panel -->
+        <div class="panel panel-left">
+            <div class="list links-list">
+                <ul>
+                    <li><a class="link" href="/">Home</a></li>
+                    <li><a class="link" href="/page2/">Page 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right panel -->
+        <div class="panel panel-right panel-cover">
+            ... panel content goes here ...
+        </div>
+
+
+
+
+        <div class="view view-main">
+
+            <div class="page" data-name="home">
+
+
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="left"><a href="#" data-panel="left" class="panel-open">Left</a></div>
+                        <div class="right"><a href="#" data-panel="right" class="panel-open">Right</a></div>
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- Additional "tabbar-labels" class -->
+                <div class="toolbar tabbar tabbar-labels">
+                    <div class="toolbar-inner">
+                        <a href="#tab-1" class="tab-link tab-link-active">
+                            <!-- Different icons for iOS and MD themes -->
+                            <i class="icon f7-icons ios-only">email_fill</i>
+                            <i class="icon material-icons md-only">email</i>
+                            <!-- Label text -->
+                            <span class="tabbar-label">Inbox</span>
+                        </a>
+                        <a href="#tab-2" class="tab-link">
+                            <i class="icon f7-icons ios-only">today_fill<span class="badge color-red">5</span></i>
+                            <i class="icon material-icons md-only">today<span class="badge color-red">5</span></i>
+                            <span class="tabbar-label">Calendar</span>
+                        </a>
+                        <a href="#tab-3" class="tab-link">
+                            <i class="icon f7-icons ios-only">cloud_fill</i>
+                            <i class="icon material-icons md-only">file_upload</i>
+                            <span class="tabbar-label">Upload</span>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="page-content">
+                    <!--Scrollable page content-->
+                    ok.
+                </div>
+
+            </div>
+            <!--end page-->
+        </div>
+        <!--end main view-->
+    </div>
+    <!--end app-->
+    <script type="text/javascript" src="cordova.js"></script>
+    <!--Framework 7-->
+    <script type="text/javascript" src="assets/js/framework7.min.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+</body>
+
 </html>
