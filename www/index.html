@@ -17,71 +17,30 @@
 <body>
     <div id="app">
 
-        <!-- Left panel -->
-        <div class="panel panel-left">
-            <div class="list links-list">
-                <ul>
-                    <li><a class="link" href="/">Home</a></li>
-                    <li><a class="link" href="/page2/">Page 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Right panel -->
-        <div class="panel panel-right panel-cover">
-            ... panel content goes here ...
-        </div>
-
-
-
-
         <div class="view view-main">
+
+            <!-- Top Navbar -->
+            <div class="navbar color-theme-green">
+                <div class="navbar-inner">
+                    <div class="title"><i class="fab fa-wolf-pack-battalion logo"></i> STRATTON OAKMONT</div>
+                    <div class="right" style="margin-right: 16px;"><i class="fas fa-sync-alt" onclick="freshStart()"></i></div>
+                </div>
+            </div>
 
             <div class="page" data-name="home">
 
-
-                <div class="navbar">
-                    <div class="navbar-inner">
-                        <div class="left"><a href="#" data-panel="left" class="panel-open">Left</a></div>
-                        <div class="right"><a href="#" data-panel="right" class="panel-open">Right</a></div>
-                    </div>
-
-
-                </div>
-
-
-
-                <!-- Additional "tabbar-labels" class -->
-                <div class="toolbar tabbar tabbar-labels">
+                <div class="toolbar tabbar toolbar-bottom-md toolbar-bottom-ios color-theme-white">
                     <div class="toolbar-inner">
-                        <a href="#tab-1" class="tab-link tab-link-active">
-                            <!-- Different icons for iOS and MD themes -->
-                            <i class="icon f7-icons ios-only">email_fill</i>
-                            <i class="icon material-icons md-only">email</i>
-                            <!-- Label text -->
-                            <span class="tabbar-label">Inbox</span>
-                        </a>
-                        <a href="#tab-2" class="tab-link">
-                            <i class="icon f7-icons ios-only">today_fill<span class="badge color-red">5</span></i>
-                            <i class="icon material-icons md-only">today<span class="badge color-red">5</span></i>
-                            <span class="tabbar-label">Calendar</span>
-                        </a>
-                        <a href="#tab-3" class="tab-link">
-                            <i class="icon f7-icons ios-only">cloud_fill</i>
-                            <i class="icon material-icons md-only">file_upload</i>
-                            <span class="tabbar-label">Upload</span>
-                        </a>
+                        <!-- Links have "tab-link" class instead of just "link" to switch tabs -->
+                        <a href="/" class="tab-link tab-link-active"><i class="far fa-eye"></i>Watchlist</a>
+                        <a href="/page2/" class="tab-link">Graphs</a>
+                        <a href="/pag3/" class="tab-link">News</a>
                     </div>
                 </div>
-
-
-
-
-
-                <div class="page-content">
+                
+                <div class="page-content" id="tab-1">
                     <!--Scrollable page content-->
-                    ok.
+                    Ok.
                 </div>
 
             </div>
@@ -90,10 +49,17 @@
         <!--end main view-->
     </div>
     <!--end app-->
+    <script>
+        function freshStart() {
+            window.location.reload();
+        }
+    </script>
     <script type="text/javascript" src="cordova.js"></script>
     <!--Framework 7-->
     <script type="text/javascript" src="assets/js/framework7.min.js"></script>
     <script type="text/javascript" src="assets/js/scripts.js"></script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
 </body>
 
 </html>

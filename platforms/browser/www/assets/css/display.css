@@ -1,3 +1,35 @@
-.page-content{
-    background-color: pink;
+/*Fonts*/
+@font-face {
+    src: url(../font/Nunito-SemiBold.ttf);
+    font-family: Nunito-SemiBold;
 }
+@font-face {
+    src: url(../font/OpenSans-Regular.ttf);
+    font-family: Openssans;
+}
+
+* {
+    box-sizing: border-box;
+}
+.navbar{
+    font-family: Nunito-SemiBold !important;
+}
+.logo{
+    font-size: 27px;
+}
+.toolbar{
+    font-family: Openssans !important;
+}
+.md .tabbar a.link, .md .tabbar a.tab-link, .md .tabbar-labels a.link, .md .tabbar-labels a.tab-link{
+    text-transform: none !important;
+}
+.tab-link{
+    color: #333 !important;
+}
+.tab-link-active{
+    font-weight: bold !important;
+    color: #2cd048 !important;
+    font-size: 17px !Important;
+}
+
+
