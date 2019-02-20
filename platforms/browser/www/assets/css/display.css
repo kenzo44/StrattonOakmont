@@ -3,6 +3,7 @@
     src: url(../font/Nunito-SemiBold.ttf);
     font-family: Nunito-SemiBold;
 }
+
 @font-face {
     src: url(../font/OpenSans-Regular.ttf);
     font-family: Openssans;
@@ -11,23 +12,35 @@
 * {
     box-sizing: border-box;
 }
-.navbar{
+
+.navbar {
     background: #2cd048 !important;
     font-family: Nunito-SemiBold !important;
 }
-.logo{
+
+.logo {
     font-size: 27px;
 }
-.toolbar{
+
+.toolbar {
     font-family: Openssans !important;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, .1);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, .1);
 }
-.md .tabbar a.link, .md .tabbar a.tab-link, .md .tabbar-labels a.link, .md .tabbar-labels a.tab-link{
+
+.md .tabbar a.link,
+.md .tabbar a.tab-link,
+.md .tabbar-labels a.link,
+.md .tabbar-labels a.tab-link {
     text-transform: none !important;
 }
-.tab-link{
+
+.tab-link {
     color: #333 !important;
 }
-.tab-link-active{
+
+.tab-link-active {
     font-weight: bold !important;
     color: #00E676 !important;
     font-size: 18px !Important;
@@ -35,28 +48,26 @@
 
 /*Tutorial Screen*/
 .tutorialicon {
-  font-size: 250px;
-  line-height: 170px;
+    font-size: 250px;
+    line-height: 170px;
 }
 
 .tutorial-close-btn {
-  background: #fff;
-  padding: 10px;
-  border-radius: 10px;
-  color: #0da6ec;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    color: #0da6ec;
 }
 
-.welcomescreen-container .welcomescreen-text a{
-  color: #fff;
-  text-decoration: underline;
+.welcomescreen-container .welcomescreen-text a {
+    color: #fff;
+    text-decoration: underline;
 }
 
 .tutorial-close-btn {
-  background: #fff;
-  padding: 10px;
-  border-radius: 10px;
-  color: #0da6ec !important;
-  text-decoration: none !important;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    color: #0da6ec !important;
+    text-decoration: none !important;
 }
-
-
