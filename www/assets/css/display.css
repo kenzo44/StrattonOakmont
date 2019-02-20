@@ -12,6 +12,7 @@
     box-sizing: border-box;
 }
 .navbar{
+    background: #2cd048 !important;
     font-family: Nunito-SemiBold !important;
 }
 .logo{
@@ -28,7 +29,7 @@
 }
 .tab-link-active{
     font-weight: bold !important;
-    color: #2cd048 !important;
+    color: #00E676 !important;
     font-size: 18px !Important;
 }
 
