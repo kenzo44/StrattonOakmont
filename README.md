@@ -13,3 +13,5 @@ Features and Credits:
 - Using https://www.alphavantage.co/ to retrieve live and accurate stock data
 - Welcome/tutorial screen. Credits - https://github.com/valnub/welcomescreen.js
 
+Had to end this at commit #21.
+
