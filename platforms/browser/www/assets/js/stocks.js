@@ -144,7 +144,7 @@ var URLF = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symb
 
 function ferrari() {
     $.ajax({
-        url: URLG,
+        url: URLF,
         dataType: 'json',
         type: 'get',
         cache: false,
@@ -174,6 +174,11 @@ ferrari();
 var button = document.querySelector('.button');
 var Sbutton = document.querySelector('.Sbutton');
 var display = document.getElementById('display');
+
+var NW = document.getElementById('NW');
+
+var total = 5000;
+
 var count = 0;
 
 //Score count
@@ -182,6 +187,8 @@ button.addEventListener("click", handleClick);
 function handleClick() {
     count = count + 1;
     display.innerText = count;
+
+    NW.innerText = total - ((count * 109) - 9);
 }
 
 Sbutton.addEventListener("click", handleSClick);
@@ -192,5 +199,6 @@ function handleSClick() {
     } else {
         count = count - 1;
         display.innerText = count;
+        NW.innerText = total + ((count * 109) - 9);
     }
 }
