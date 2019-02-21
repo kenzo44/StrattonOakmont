@@ -40,8 +40,6 @@ function msft() {
 msft();
 
 
-
-
 var symbolT = "TSLA";
 var intervalT = "5min";
 
