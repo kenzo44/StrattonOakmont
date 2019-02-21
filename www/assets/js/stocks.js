@@ -188,7 +188,15 @@ function handleClick() {
     count = count + 1;
     display.innerText = count;
 
-    NW.innerText = total - ((count * 109) - 9);
+    if (total <= 0) {
+        app.dialog.alert('No more Celery! Emergency Loan :)');
+    } else {
+        total = total - ((count * 109) - 9);
+
+        NW.innerText = total;
+    }
+
+
 }
 
 Sbutton.addEventListener("click", handleSClick);
@@ -199,6 +207,9 @@ function handleSClick() {
     } else {
         count = count - 1;
         display.innerText = count;
-        NW.innerText = total + ((count * 109) - 9);
+
+        total = total + ((count * 109) - 9);
+        NW.innerText = total;
+
     }
 }
