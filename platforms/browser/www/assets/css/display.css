@@ -9,12 +9,18 @@
     font-family: Openssans;
 }
 
+@font-face {
+    src: url(../font/Montserrat-Regular.ttf);
+    font-family: Montserrat;
+}
+
+
 * {
     box-sizing: border-box;
 }
 
 .navbar {
-    background: #2cd048 !important;
+    background: linear-gradient(45deg, #02a3cf 0%, rgba(2, 163, 207, 0) 70%), linear-gradient(135deg, #00d67d 10%, rgba(0, 214, 125, 0) 80%), linear-gradient(225deg, #01d062 10%, rgba(1, 208, 98, 0) 80%), linear-gradient(315deg, #038ed3 100%, rgba(3, 142, 211, 0) 70%) !important;
     font-family: Nunito-SemiBold !important;
 }
 
@@ -23,7 +29,7 @@
 }
 
 .toolbar {
-    font-family: Openssans !important;
+    font-family: Montserrat !important;
     -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
     -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, .1);
     box-shadow: 0px 0px 2px rgba(0, 0, 0, .1);
@@ -70,4 +76,54 @@
     border-radius: 10px;
     color: #0da6ec !important;
     text-decoration: none !important;
+}
+
+.userProfile {
+    height: 140px;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.23);
+}
+.me{
+    display: inline-block;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: Montserrat;
+    font-size: 18px;
+    
+}
+
+.budget{
+    font-family: Openssans !important;
+    text-align: center;
+    font-size: 15px;
+}
+#NW{
+    font-size: 25px;
+    color: #2cd048;
+    font-weight: bold;
+}
+
+.profImg {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url(../img/profilePic.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+.date{
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    font-family: Openssans;
+}
+table{
+  width:100%;
+  table-layout: fixed;
 }

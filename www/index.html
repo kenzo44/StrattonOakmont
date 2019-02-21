@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/welcomescreen.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
@@ -24,8 +26,8 @@
             <!-- Top Navbar -->
             <div class="navbar no-shadow">
                 <div class="navbar-inner">
-                    <div class="title"><i class="fab fa-wolf-pack-battalion logo"></i> STRATTON OAKMONT</div>
-                    <div class="right" style="margin-right: 16px;"><i class="fas fa-sync-alt" onclick="freshStart()"></i></div>
+                    <div class="title"><i class="fab fa-wolf-pack-battalion logo"></i> $TRATTON OAKMONT</div>
+                    <div class="right" style="margin-right: 16px;"><i class="fas fa-info-circle" onclick="freshStart()"></i></div>
                 </div>
             </div>
 
@@ -36,23 +38,110 @@
                         <!-- Links have "tab-link" class instead of just "link" to switch tabs -->
                         <a href="/" class="tab-link tab-link-active"><i class="far fa-eye"></i>Watchlist</a>
                         <a href="/page2/" class="tab-link">Markets</a>
-                        <a href="/pag3/" class="tab-link">News</a>
+                        <a href="/page3/" class="tab-link">Activity</a>
                     </div>
                 </div>
 
                 <div class="page-content" id="tab-1">
                     <!--Scrollable page content-->
-                    <h2>Total Gain</h2>
-                    
-                    <span id="output"></span>
-                    
-                    <table>
-                    
-                    
-                    </table>
+                    <div class="userProfile">
+                        <div class="me">
+                            Welcome, Mr. McDuck<br><br>
+                            <div class="budget">Total: <span id="NW">$5000</span></div>
+                        </div>
+                        <div class="profImg"></div>
+                    </div>
+
+                    <div class="date">Last Refreshed: <span id="rDate"></span></div>
+
+                    <div class="tbl-header">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            <thead>
+                                <tr>
+                                    <th>Symbol</th>
+                                    <th>Price</th>
+                                    <th>Volume</th>
+                                    <th>QTY</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="tbl-content">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            <tbody>
+                                <tr>
+                                    <td id="stockSymbol"></td>
+                                    <td id="stockPrice"></td>
+                                    <td id="stockVolume"></td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+
+                                    <td><a class="pure-button" href="#">BUY</a></td>
+                                    <td><a class="pure-button" href="#">SELL</a></td>
+
+                                </tr>
+                                <tr>
+                                    <td id="stockSymbolT"></td>
+                                    <td id="stockPriceT"></td>
+                                    <td id="stockVolumeT"></td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+
+                                    <td><a class="pure-button" href="#">BUY</a></td>
+                                    <td><a class="pure-button" href="#">SELL</a></td>
+
+                                </tr>
+
+                                <tr>
+                                    <td id="stockSymbolA"></td>
+                                    <td id="stockPriceA"></td>
+                                    <td id="stockVolumeA"></td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+
+                                    <td><a class="pure-button" href="#">BUY</a></td>
+                                    <td><a class="pure-button" href="#">SELL</a></td>
+
+                                </tr>
+
+                                <tr>
+                                    <td id="stockSymbolG"></td>
+                                    <td id="stockPriceG"></td>
+                                    <td id="stockVolumeG"></td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+
+                                    <td><a class="pure-button" href="#">BUY</a></td>
+                                    <td><a class="pure-button" href="#">SELL</a></td>
+
+                                </tr>
+
+                                <tr>
+                                    <td id="stockSymbolF"></td>
+                                    <td id="stockPriceF"></td>
+                                    <td id="stockVolumeF"></td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+
+                                    <td><a class="pure-button" href="#">BUY</a></td>
+                                    <td><a class="pure-button" href="#">SELL</a></td>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
 
                 </div>
-
+                <!--end page-content-->
             </div>
             <!--end page-->
         </div>
@@ -74,9 +163,12 @@
     <script type="text/javascript" src="assets/js/appConfig.js"></script>
 
     <!--Tutorial Screen-->
+    <!--
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.jquery.min.js"></script>
     <script src="assets/js/welcomescreen.js"></script>
     <script src="assets/js/tutorialConfig.js"></script>
+-->
+
 
     <!--Stocks-->
     <script type="text/javascript" src="assets/js/stocks.js"></script>

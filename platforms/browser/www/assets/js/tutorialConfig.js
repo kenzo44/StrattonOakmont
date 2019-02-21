@@ -22,7 +22,7 @@ var welcomescreen_slides = [
 ];
 
 var options = {
-  'bgcolor': '#0da6ec',
+  'bgcolor': '#2cd048',
   'fontcolor': '#fff'
 }
 var welcomescreen = new Welcomescreen(welcomescreen_slides, options);
