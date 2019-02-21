@@ -83,22 +83,24 @@
     width: 100%;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.23);
 }
-.me{
+
+.me {
     display: inline-block;
     float: left;
     margin-top: 20px;
     margin-left: 20px;
     font-family: Montserrat;
     font-size: 18px;
-    
+
 }
 
-.budget{
+.budget {
     font-family: Openssans !important;
     text-align: center;
     font-size: 15px;
 }
-#NW{
+
+#NW {
     font-size: 25px;
     color: #2cd048;
     font-weight: bold;
@@ -117,13 +119,38 @@
     width: 100px;
     border-radius: 100%;
 }
-.date{
+
+.date {
     text-align: center;
     font-size: 14px;
     padding: 20px;
     font-family: Openssans;
 }
-table{
-  width:100%;
-  table-layout: fixed;
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.tbl-header {
+    font-family: Montserrat;
+    font-size: 15px;
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    background: linear-gradient(to right, #25c481, #25b7c4);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.tbl-content {
+    text-align: center;
+    font-family: Openssans;
+    font-size: 15px;
+    height: auto;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.space{
+    border: 10px solid transparent;
 }
