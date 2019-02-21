@@ -166,3 +166,31 @@ function ferrari() {
 }
 
 ferrari();
+
+
+//Math Buttons
+
+//Variables
+var button = document.querySelector('.button');
+var Sbutton = document.querySelector('.Sbutton');
+var display = document.getElementById('display');
+var count = 0;
+
+//Score count
+button.addEventListener("click", handleClick);
+
+function handleClick() {
+    count = count + 1;
+    display.innerText = count;
+}
+
+Sbutton.addEventListener("click", handleSClick);
+
+function handleSClick() {
+    if (count <= 0) {
+        display.innerText = '0';
+    } else {
+        count = count - 1;
+        display.innerText = count;
+    }
+}
